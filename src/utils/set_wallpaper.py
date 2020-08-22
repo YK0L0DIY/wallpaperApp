@@ -1,4 +1,5 @@
 import ctypes
+import os
 
 from logger import logger
 
@@ -15,6 +16,9 @@ def set_set_wallpaper_win(path: str):
 
 
 def set_set_wallpaper_unix(path: str):
-    logger.error(path)
-    logger.error("UNIX")
-    raise NotImplementedError
+    logger.debug(path)
+    logger.debug("UNIX")
+
+    os.system(f"/usr/bin/gsettings set org.gnome.desktop.background picture-uri {path}")
+
+    return
