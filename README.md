@@ -1,2 +1,2 @@
 # wallpaperApp
-Wallpaper app for Windows, Linux and Mac
+Migrated to [gitlab](https://gitlab.com/yk0l0diy/wallpaperapp) 
